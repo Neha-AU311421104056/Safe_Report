@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anonymous Crime Reporting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+/* ---------- BASE PAGE STYLE ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(10, 25, 60, 0.85), rgba(10, 25, 60, 0.85)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- HEADER & NAVBAR ---------- */
+.site-header {
+  background-color: rgba(3, 37, 94, 0.85);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  padding: 0.8rem 2rem;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  color: #e9f5f2 !important;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(46, 125, 50, 0.7);
+}
+
+/* ---------- NAVIGATION BUTTONS ---------- */
+.nav-button {
+  font-weight: 600;
+  padding: 0.5rem 1.8rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+/* Green report button */
+.btn-green {
+  background-color: #2e7d32;
+  border: none;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.7);
+}
+
+.btn-green:hover,
+.btn-green:focus {
+  background-color: #27632a;
+  box-shadow: 0 0 15px rgba(46, 125, 50, 0.9);
+  color: #bdcbc8;
+  outline: none;
+}
+
+/* Red admin login button */
+.btn-red {
+  background-color: #c62828;
+  border: none;
+  box-shadow: 0 4px 12px rgba(198, 40, 40, 0.7);
+}
+
+.btn-red:hover,
+.btn-red:focus {
+  background-color: #9b2222;
+  box-shadow: 0 0 18px rgba(198, 40, 40, 0.95);
+  color: #f8d7da;
+  outline: none;
+}
+
+/* About link with border */
+.btn-outline {
+  color: #a6bbb7;
+  border: 1px solid #a6bbb7;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background-color: rgba(166, 187, 183, 0.2);
+  border-color: #a6bbb7;
+  box-shadow: 0 0 8px rgba(166, 187, 183, 0.5);
+  color: #a6bbb7;
+  outline: none;
+  text-decoration: none;
+}
+
+/* ---------- MAIN SECTION ---------- */
+.home-container {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 8rem auto 5rem;
+  padding: 0 2rem;
+  text-align: center;
+  user-select: none;
+}
+
+.home-heading {
+  font-weight: 900;
+  font-size: 3.75rem;
+  letter-spacing: 3.5px;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+.home-subtext {
+  font-size: 1.3rem;
+  color: #d8e9db;
+  margin-bottom: 3.5rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  color: #8ca38c;
+  font-size: 0.9rem;
+  background-color: rgba(3, 37, 94, 0.85);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  user-select: none;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 576px) {
+  .home-heading {
+    font-size: 2.75rem;
+  }
+
+  .home-subtext {
+    font-size: 1.1rem;
+  }
+
+  .nav-button {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <nav class="navbar site-header navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand brand-name" href="#">Safe Report</a>
+
+    <ul class="navbar-nav align-items-center gap-2 gap-lg-3">
+      <li class="nav-item">
+        <a class="nav-button btn-green" href="/reportcrime/">Report</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-button btn-outline" href="/about/">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-button btn-red" href="/login/">Admin Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="home-container">
+  <h1 class="home-heading">Welcome to the Anonymous Crime Reporting System</h1>
+  <p class="home-subtext">Your safety is our priority. Report crimes anonymously and securely.</p>
+  <a href="/reportcrime/" class="nav-button btn-green btn-lg px-5 shadow">Report a Crime</a>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 Anonymous Crime Reporting. All rights reserved.
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

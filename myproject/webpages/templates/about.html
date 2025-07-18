@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - Anonymous Crime Reporting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* ---------- GENERAL PAGE STYLES ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar-header {
+  background-color: rgba(3, 37, 94, 0.85);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  padding: 0.8rem 2rem;
+}
+
+.navbar-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  color: #e9f5f2 !important;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(46, 125, 50, 0.7);
+}
+
+/* ---------- NAVBAR BUTTONS ---------- */
+.nav-btn {
+  color: #a6bbb7;
+  border: 1px solid #a6bbb7;
+  padding: 0.5rem 1.4rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+  background-color: rgba(166, 187, 183, 0.2);
+  box-shadow: 0 0 8px rgba(166, 187, 183, 0.5);
+  color: #a6bbb7;
+  outline: none;
+}
+
+/* ---------- MAIN SECTION ---------- */
+.about-container {
+  flex-grow: 1;
+  max-width: 700px;
+  margin: 3rem auto;
+  background-color: rgba(20, 35, 92, 0.85);
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.about-heading {
+  font-weight: 800;
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #d2dae2;
+}
+
+/* ---------- PRIMARY BUTTON (Go to Home) ---------- */
+.btn-home {
+  background-color: #2e7d32;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border-radius: 8px;
+  color: #e9f5f2;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(46, 125, 50, 0.8);
+  display: inline-block;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+  background-color: #27632a;
+  box-shadow: 0 0 22px rgba(46, 125, 50, 1);
+  color: #0fc837;
+  outline: none;
+  text-decoration: none;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 600px) {
+  .about-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+ <nav class="navbar-header navbar navbar-expand-lg navbar-dark px-4">
+  <a class="navbar-title navbar-brand" href="/">Safe Report</a>
+  <div class="ms-auto d-flex gap-2">
+    <a class="nav-btn btn btn-outline-light" href="/reportcrime/">Report</a>
+    <a class="nav-btn btn btn-outline-light active" href="/about/">About</a>
+    <a class="nav-btn btn btn-outline-warning" href="/login/">Admin Login</a>
+  </div>
+</nav>
+
+<main class="about-container">
+  <h1 class="about-heading">About Safe Report</h1>
+  <p>
+      Safe Report is a secure and anonymous crime reporting platform designed to empower citizens to report crimes confidentially. 
+      Our mission is to help authorities respond quickly and effectively by providing accurate information while protecting your identity.
+    </p>
+    <p>
+      Whether it’s theft, assault, fraud, cybercrime, or any suspicious activity, you can safely submit reports without revealing personal details. 
+      Your safety and privacy are our top priority.
+    </p>
+    <p>
+      This platform is managed by a dedicated admin team who reviews reports and works closely with law enforcement to ensure justice is served.
+    </p>
+    <a href="http://127.0.0.1:8000/" class="btn btn-primary" aria-label="Go to Home page">Go to Home</a>
+</main>
+</body>
+</html>
+

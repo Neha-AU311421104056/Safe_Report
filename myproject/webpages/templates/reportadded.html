@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report Submitted - Anonymous Crime Reporting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: #f1f1f1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav.navbar {
+      background-color: rgba(3, 37, 94, 0.85);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+      padding: 0.8rem 2rem;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.75rem;
+      letter-spacing: 2px;
+      color: #e9f5f2 !important;
+      text-transform: uppercase;
+      text-shadow: 0 0 8px rgba(46, 125, 50, 0.7);
+    }
+
+    .btn-outline-light {
+      color: #a6bbb7;
+      border-color: #a6bbb7;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+      padding: 0.5rem 1.4rem;
+      border-radius: 0.375rem;
+      font-weight: 600;
+    }
+
+    .btn-outline-light:hover,
+    .btn-outline-light:focus {
+      background-color: rgba(166, 187, 183, 0.2);
+      box-shadow: 0 0 8px rgba(166, 187, 183, 0.5);
+      color: #a6bbb7;
+      outline: none;
+      text-decoration: none;
+    }
+
+    .btn-outline-warning {
+      background-color: #c62828;
+      border: none;
+      box-shadow: 0 4px 12px rgba(198, 40, 40, 0.7);
+      color: #f1f1f1;
+      font-weight: 600;
+      padding: 0.5rem 1.6rem;
+      border-radius: 0.375rem;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-outline-warning:hover,
+    .btn-outline-warning:focus,
+    .btn-outline-warning.active {
+      background-color: #9b2222;
+      box-shadow: 0 0 18px rgba(198, 40, 40, 0.95);
+      color: #f8d7da;
+      outline: none;
+    }
+
+    main.container {
+      flex-grow: 1;
+      max-width: 600px;
+      margin: auto;
+      background-color: rgba(20, 35, 92, 0.85);
+      padding: 2.5rem 2rem 3rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+      color: #e9f5f2;
+      user-select: none;
+    }
+
+    main h3 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+    }
+
+    main p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #d2dae2;
+    }
+
+    main a.btn-primary {
+      background-color: #2e7d32;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-weight: 700;
+      font-size: 1.15rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 6px 18px rgba(46, 125, 50, 0.8);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      color: #e9f5f2;
+      text-decoration: none;
+    }
+
+    main a.btn-primary:hover,
+    main a.btn-primary:focus {
+      background-color: #27632a;
+      box-shadow: 0 0 22px rgba(46, 125, 50, 1);
+      color: #d0e3d4;
+      outline: none;
+      text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+      main.container {
+        padding: 2rem 1.5rem 2.5rem;
+      }
+
+      main h3 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark px-4" aria-label="Main navigation">
+    <a class="navbar-brand" href="http://127.0.0.1:8000/">Safe Report</a>
+    <div class="ms-auto d-flex gap-2">
+      <a class="btn btn-outline-light" href="http://127.0.0.1:8000/reportcrime/">Report</a>
+      <a class="btn btn-outline-light" href="http://127.0.0.1:8000/about/">About</a>
+      <a class="btn btn-outline-warning" href="http://127.0.0.1:8000/login/">Admin Login</a>
+    </div>
+  </nav>
+
+  <main class="container mt-5 text-center" role="main">
+    <h3>Thank you for your report!</h3>
+    <p>Your submission has been recorded and will be reviewed by the authorities.</p>
+    <a href="http://127.0.0.1:8000/" class="btn btn-primary">Go to Home</a>
+  </main>
+</body>
+</html>
+
